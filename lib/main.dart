@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'segundo_plano_menu_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -222,6 +223,26 @@ class _HomePageState extends State<HomePage> {
                   );
                 },
                 child: const Text('Acción adicional'),
+              ),
+
+              const SizedBox(height: 12),
+
+              // Navegación al Taller 2: Procesos en segundo plano
+              ElevatedButton.icon(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (_) => const SegundoPlanoMenuScreen()),
+                  );
+                },
+                icon: const Icon(Icons.sync),
+                label: const Text('Taller 2: Procesos en segundo plano'),
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.white,
+                  padding: const EdgeInsets.symmetric(vertical: 14),
+                  textStyle: const TextStyle(fontSize: 16),
+                ),
               ),
 
               const SizedBox(height: 16),
