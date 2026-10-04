@@ -239,7 +239,7 @@ class _HomePageState extends State<HomePage> {
                 icon: const Icon(Icons.sync),
                 label: const Text('Taller 2: Procesos en segundo plano'),
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: Colors.deepPurple,
+                  backgroundColor: Colors.white,
                   padding: const EdgeInsets.symmetric(vertical: 14),
                   textStyle: const TextStyle(fontSize: 16),
                 ),
